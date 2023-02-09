@@ -1,4 +1,4 @@
-package richmondPreparation;
+package logicTasks;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -15,6 +15,7 @@ public class Challenges {
         String value  = s.substring(s.indexOf("[")+1, s.indexOf("]"));
         System.out.println(value.repeat(Integer.valueOf(num)));
     }
+
 
     //remove number and square the letter near it.
     public static void asdf2(){
