@@ -7,7 +7,6 @@ public class Challenges {
     public static void main(String[] args) {
 
     }
-
     //remove text btw [] and square to num in front
     public static void asdf(){
         String s = "3[asdf]";
@@ -49,22 +48,13 @@ public class Challenges {
         System.out.println(val1.repeat(Integer.valueOf(num1))+value2.repeat(Integer.valueOf(num2)));
     }
 
-    public static void isPolindrome(){
-       String s = "AraMA" ;
-       boolean switcher = true;
-        if(!s.isEmpty()) {
-            for (int i = 0; i < s.length(); i++) {
-                char b = s.charAt(i);
-                char c = s.charAt(s.length() - 1);
-                if (b != c) {
-                    switcher =false;
-                    break;
-                }
+    public static boolean isPolindrome(){
+        String s = "ArarA";
+        for (int i=0;i<s.length();i++){
+            if(s.charAt(i)!=s.charAt(s.length()-i-1)){
+                return false;
             }
-            if(!switcher){
-                System.out.println("not EQLS");
-            }else System.out.println("All EQLS");
-        }
+        }return true;
     }
 
     public static void capitalizeFirstLetterInEachWord() {
@@ -288,7 +278,6 @@ public class Challenges {
                 }
                 numS = "";
             }
-
         }
     }
 
